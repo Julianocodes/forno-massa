@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demonstração de cardápio de pizzas com seleção de tamanhos e carrinho de compras." />
+    <title>Forno &amp; Massa | Cardápio demonstrativo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="models">
+        <div class="pizza-item">
+            <a href="" aria-label="Ver detalhes da pizza">
+                <div class="pizza-item--img"><img src="" alt="" /></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--price">R$ --</div>
+            <div class="pizza-item--name">--</div>
+            <div class="pizza-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" alt="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <button class="menu-openner" type="button" aria-label="Abrir carrinho"><span>0</span>🛒</button>
+    </header>
+    <main>
+        <h1>Pizzas</h1>
+        <div class="pizza-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <button class="menu-closer" type="button" aria-label="Fechar carrinho">❌</button>
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+            <button class="cart--finalizar" type="button">Revisar pedido</button>
+            </div>
+        </div>
+    </aside>
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <button class="pizzaInfo--cancelMobileButton" type="button">Voltar</button>
+                <div class="pizzaBig">
+                    <img src="" alt="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Tamanho</div>
+                    <div class="pizzaInfo--sizes">
+                        <button type="button" data-key="0" class="pizzaInfo--size">PEQUENA <span>--</span></button>
+                        <button type="button" data-key="1" class="pizzaInfo--size">MÉDIA <span>--</span></button>
+                        <button type="button" data-key="2" class="pizzaInfo--size selected">GRANDE <span>--</span></button>
+                    </div>
+                </div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="pizzaInfo--addButton" type="button">Adicionar ao carrinho</button>
+                <button class="pizzaInfo--cancelButton" type="button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <dialog class="demoNotice" aria-labelledby="demoNoticeTitle">
+        <h2 id="demoNoticeTitle">Pedido de demonstração</h2>
+        <p>O carrinho calcula um pedido de exemplo, mas este projeto não envia pedidos nem processa pagamentos.</p>
+        <form method="dialog"><button class="demoNotice--close">Entendi</button></form>
+    </dialog>
+
+    <script src="pizzas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
