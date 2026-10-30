@@ -2,6 +2,8 @@
 
 Projeto de estudo de uma pizzaria fictícia. A interface permite explorar sabores, escolher tamanho e quantidade e acompanhar um carrinho com subtotal, desconto demonstrativo e total.
 
+**Demonstração:** [forno-massa.vercel.app](https://forno-massa.vercel.app/)
+
 > Este é um exercício de front-end baseado nos estudos de JavaScript com a B7Web. Os textos, imagens e preços são ilustrativos. O projeto não envia pedidos, não processa pagamentos e não representa uma pizzaria real.
 
 ## Funcionalidades
@@ -35,3 +37,5 @@ Não é necessário instalar dependências. Clone ou baixe o repositório e abra
 - Layout responsivo e elementos HTML semânticos.
 
 Desenvolvido por **Juliano Roso** como parte dos estudos de desenvolvimento web.
+
+
